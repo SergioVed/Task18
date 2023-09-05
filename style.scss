@@ -17,6 +17,32 @@ body{
         background-color: rgb(246, 255, 0);
     }
 }
+.button{
+    width: 120px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    button{
+        height: 50px;
+        width: 50px;
+    }
+    &__top{
+        grid-column: 2;
+    }
+    &__bottom{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    &__left{
+        grid-row: 2;
+        grid-column: 1; 
+    }
+    &__right{
+        grid-row: 2;
+        grid-column: 3; 
+    }
+}
 .snake{
     background-color: greenyellow;
 }
