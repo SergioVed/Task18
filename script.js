@@ -26,3 +26,10 @@ class Snake{
         this.body = snake.body;  
     }
 }
+
+const hero1 = new Game({
+    score: 1,
+    speed: 2,
+    direction: -1
+})
+console.log(hero1.score)
