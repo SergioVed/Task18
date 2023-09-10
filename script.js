@@ -12,6 +12,7 @@ function createBoard(){
         let div = document.createElement("div");
         grid.appendChild(div);
     }
+
 }
 createBoard()
  class Game{
@@ -27,9 +28,12 @@ class Snake{
     }
 }
 
-const hero1 = new Game({
-    score: 1,
-    speed: 2,
-    direction: -1
-})
-console.log(hero1.score)
+function startGame() {
+    const snake = new Snake({ body: [[1, 1]] });
+    grid.innerHTML = ""
+    createBoard();
+    score = 0;
+    scoreDisplay.textContent = `Score: ${score}`;
+    
+  }
+  startGame();
